@@ -15,6 +15,8 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
  - `ansible-vault decrypt secret --vault-pass-file vault_pass`</br>
  - `ansible-galaxy install -r requirements.yml`</br>
  - `ansible-playbook site.yml -i inventoryt/prod.yml`</br>
+ При настройке job установить среду разработки - SSH Agent</br>
+![screen](https://github.com/murzinvit/screen/blob/88276bde7cfdce0da105b6ce0d3e41a0efb9fa41/Task_SSH_Enabled.jpg)
 
 
 
