@@ -1,2 +1,3 @@
 ### 09.03_Jenkins
-Jenkins установка: docker pull jenkins/jenkins, запуск: docker run -d --name jenkins -p 8080:8080 jenkins/jenkins </br>
+Установка Jenkins на Ubuntu 20.04: apt update && apt install openjdk-8-jre, далее команды в терминал [jenkins.io/doc](https://www.jenkins.io/doc/book/installing/linux/) </br>
+Jenkins доступен на localhost:8080:8080 </br>
