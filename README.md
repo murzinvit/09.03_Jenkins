@@ -12,7 +12,7 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 При выполнении Job jenkins склонирует репозиторий локальную папку и выполнит указанные shell команды. </br> 
 В поле Build(сборка) выбрать - выполнить комнаду - shell, далее указать требуемые shell команды linux. </br> 
 Для выполнения [example-playbook](https://github.com/murzinvit/example-playbook) потребуются следующие команды: </br>
- - `ansible-vault decrypt secret (ввести пароль и из vault-pass)`</br>
+ - `ansible-vault decrypt secret --vault-pass-file vault_pass`</br>
  - `ansible-galaxy install -r requirements.yml`</br>
  - `ansible-playbook site.yml -i inventoryt/prod.yml`</br>
 
