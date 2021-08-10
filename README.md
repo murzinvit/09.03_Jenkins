@@ -3,7 +3,12 @@
 Сделать fork репозитория [example-playbook](https://github.com/aragastmatb/example-playbook) - на github.com справа кнопка - fork
 Установка Jenkins на Ubuntu 20.04: `apt update && apt install openjdk-8-jre`, далее вставить команды в PuTTY из [jenkins.io/doc](https://www.jenkins.io/doc/book/installing/linux/) </br>
 Jenkins доступен: `localhost: 8080:8080` </br>
-Выбор плагинов: Git, GitHub, GitParameter, GitHub Branch, SSH, SSHAgent, Pipeline </br>
+Выбор плагинов: Git, GitHub, SSH, SSHAgent, Pipeline </br>
+Добавление ssh ключа на AWS instance: </br>
+ - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
+ - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano -y, nano /etc/ssh/sshd_config </br>
+ - В sshd_config выставить PasswdAuthentication yes, далее reboot </br>
+ - Теперь с локального jenkins master - ssh-keygen -t rsa, ssh-copy-id root@0.0.0.0(ip instance) </br>
 Jenkins login в Git по SSH: на хосте с jenkins выполнить -> `keygen -t rsa, cat ~/.key.pub` -> добавить в `https://github.com/settings/keys` </br>
 В Jenkins зайти в: `Настроить jenkins` -> `Manage Creditionals` -> `add creditionals` -> `SSH Username with private key` -> `Private Key`</br>
 В поле - `Username` указать login github аккаунта. В поле `ID` - указать любое удобное имя(Git_Hub_login).`Passphrase` задавать не нужно т.к не завали </br>
