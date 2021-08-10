@@ -17,6 +17,8 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
  - `ansible-playbook site.yml -i inventoryt/prod.yml`</br>
  При настройке job установить среду сборки - SSH Agent, выбрать credentionals:</br>
 ![screen](https://github.com/murzinvit/screen/blob/88276bde7cfdce0da105b6ce0d3e41a0efb9fa41/Task_SSH_Enabled.jpg)
+Добавить slave, перед этим нужно настроить авторизацию ssh по ключу:
+![screen](https://github.com/murzinvit/screen/blob/847495506518851559ee0ed22ec97c3f3c8fb214/add_slave.jpg)
 
 
 
