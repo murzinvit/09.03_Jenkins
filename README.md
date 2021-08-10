@@ -30,8 +30,8 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 `usermod -aG docker jenkins`</br>
 `usermod -aG root jenkins`</br>
 `chmod 777 /var/run/docker.sock`</br>
-### Рузультат работы в docker контейнере:
-![screen](https://github.com/murzinvit/screen/blob/46fe7e1faec901276c1ec8fa25292710aeda9d36/RESULT_in_docker.jpg)
+### Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её:</br>
+![screen](https://github.com/murzinvit/screen/blob/2e9f1fc2adbafed776597e7ed7a602116f1e1778/Pipeline_scrypt.jpg)</br>
 
 
 
