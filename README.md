@@ -26,7 +26,11 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 ![screen](https://github.com/murzinvit/screen/blob/847495506518851559ee0ed22ec97c3f3c8fb214/add_slave.jpg)
 При настройке Credentionals в поле username указать актульный login name </br>
 ![screen](https://github.com/murzinvit/screen/blob/484f9a3a2f0357f1181e6f5e7ec1975987ff7fc7/Credentionals_jenkins.jpg)
-При выполнении playbook на docker контейнере выходит ошибка доступа к демону докера, для исправления: `usermod -aG docker jenkins && service jenkins reboot` </br>
+При выполнении playbook на docker контейнере выходит ошибка доступа к демону докера, для исправления: </br>
+`usermod -aG docker jenkins`</br>
+`usermod -aG root jenkins`</br>
+`chmod 777 /var/run/docker.sock`</br>
+
 
 
 
