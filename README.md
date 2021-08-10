@@ -34,6 +34,8 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 ![screen](https://github.com/murzinvit/screen/blob/2e9f1fc2adbafed776597e7ed7a602116f1e1778/Pipeline_scrypt.jpg)</br>
 ### Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile(поменять master на main)[pipeline_repo](https://github.com/murzinvit/pipeline_repo)</br>
 ![screen](https://github.com/murzinvit/screen/blob/21252acc1a9917cc7b9dc59a567b884bcd630ca2/Jenkinsfile.jpg)</br>
+### Создать Scripted Pipeline, наполнить его скриптом из pipeline
+[ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo/blob/main/ScriptedJenkinsfile)
 
 
 
