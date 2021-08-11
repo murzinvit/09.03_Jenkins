@@ -37,7 +37,7 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 ### Создать Scripted Pipeline, наполнить его скриптом из pipeline
 [ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo/blob/main/ScriptedJenkinsfile)
 ### Добавление credentionals для aws login:
-[ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/257e381048af8a761919b80b66df063ed613e402/Credentionals_for_aws.jpg)
+![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/257e381048af8a761919b80b66df063ed613e402/Credentionals_for_aws.jpg)
 
 
 
