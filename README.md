@@ -22,9 +22,9 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
  - `ansible-playbook site.yml -i inventoryt/prod.yml`</br>
  При настройке job установить среду сборки - SSH Agent, выбрать credentionals:</br>
 ![screen](https://github.com/murzinvit/screen/blob/88276bde7cfdce0da105b6ce0d3e41a0efb9fa41/Task_SSH_Enabled.jpg)
-Добавить slave, перед этим нужно настроить авторизацию ssh по ключу:
+Если slaves будут статическими, то перед их добавлением нужно настроить авторизацию ssh по ключу между master и slave:</br>
 ![screen](https://github.com/murzinvit/screen/blob/847495506518851559ee0ed22ec97c3f3c8fb214/add_slave.jpg)
-При настройке Credentionals в поле username указать актульный login name </br>
+При настройке Credentionals в поле `username` указывать реальный login name </br>
 ![screen](https://github.com/murzinvit/screen/blob/484f9a3a2f0357f1181e6f5e7ec1975987ff7fc7/Credentionals_jenkins.jpg)
 При выполнении playbook на docker контейнере (jenkins master и docker контейнер на одной машине) выходит ошибка доступа к демону докера, для исправления: </br>
 `usermod -aG docker jenkins`</br>
