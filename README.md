@@ -40,6 +40,9 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 ![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/257e381048af8a761919b80b66df063ed613e402/Credentionals_for_aws.jpg)
 ### Настройка соединения с AWS cloud:
 ![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/32f3e39dd1ee586c9bf453ce986adbded5212422/Cloud_connect_settings.jpg)
+### В конечном итоге поднял cloud через docker на том же хосте что и jenkins master, по [этой](https://russianblogs.com/article/73231545720/) статье:</br>
+Образ использовал из задания - docker.io/aragast/agent:7
+
 
 
 
