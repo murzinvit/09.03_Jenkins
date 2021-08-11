@@ -1,10 +1,11 @@
 ### 09.03_Jenkins
 ============================================</br>
-Сделать fork репозитория [example-playbook](https://github.com/aragastmatb/example-playbook) - на github.com справа кнопка - fork
-Установка Jenkins на Ubuntu 20.04: `apt update && apt install openjdk-8-jre`, далее вставить команды в PuTTY из [jenkins.io/doc](https://www.jenkins.io/doc/book/installing/linux/) </br>
+Сделал fork репо [example-playbook](https://github.com/aragastmatb/example-playbook) - на github.com справа кнопка - fork
+Установка Jenkins на Ubuntu 20.04: `apt update && apt install openjdk-8-jre`, далее вставить команды в PuTTY из док. [jenkins.io/doc](https://www.jenkins.io/doc/book/installing/linux/) </br>
 Jenkins доступен: `localhost: 8080:8080` </br>
-Выбор плагинов: Git, GitHub, SSH, SSHAgent, Pipeline </br>
-Добавление ssh ключа на AWS instance: </br>
+Выбор плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin </br>
+</br>
+### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
  - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano git -y, nano /etc/ssh/sshd_config </br>
  - В sshd_config выставить PasswdAuthentication yes, далее установить java - yum install java-1.8.0-openjdk.x86_64,pip3 install absible далее reboot </br>
