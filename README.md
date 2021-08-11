@@ -39,7 +39,7 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 ### Добавление credentionals для aws login:
 ![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/257e381048af8a761919b80b66df063ed613e402/Credentionals_for_aws.jpg)
 ### Настройка соединения с AWS cloud:
-![ScriptedJenkinsfile]https://github.com/murzinvit/screen/blob/32f3e39dd1ee586c9bf453ce986adbded5212422/Cloud_connect_settings.jpg)
+![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/32f3e39dd1ee586c9bf453ce986adbded5212422/Cloud_connect_settings.jpg)
 
 
 
