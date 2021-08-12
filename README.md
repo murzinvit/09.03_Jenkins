@@ -65,8 +65,10 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 `usermod -aG docker jenkins`</br>
 `usermod -aG root jenkins`</br>
 `chmod 777 /var/run/docker.sock`</br>
-### Docker cloud
+### Docker cloud:
 ![docker](https://github.com/murzinvit/screen/blob/c01850efa11eb876bf70a86712b145134ffd1588/Docker_cloud_connect.jpg)
+### Docker cloud templates:
+![docker_cloud_templates](https://github.com/murzinvit/screen/blob/f31d6e7dcd45d2b263eacc780fd52b1ebb70501f/Docker_clouds_templates.jpg)
 ### Добавление credentionals для aws login:
 ![ScriptedJenkinsfile](https://github.com/murzinvit/screen/blob/257e381048af8a761919b80b66df063ed613e402/Credentionals_for_aws.jpg)
 ### Настройка соединения с AWS cloud:
