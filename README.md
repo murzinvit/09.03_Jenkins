@@ -35,7 +35,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 8. Отправить ссылку на репозиторий в ответе: </br>
 [https://github.com/murzinvit/pipeline_repo/ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo) 
 
-## Детали процесса для справки </br>
+## Детали процесса </br>
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
  - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano git -y, nano /etc/ssh/sshd_config </br>
