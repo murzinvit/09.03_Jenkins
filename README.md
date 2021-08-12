@@ -21,7 +21,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 > `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
 
 2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её </br>
-![screen](https://github.com/murzinvit/screen/blob/2e9f1fc2adbafed776597e7ed7a602116f1e1778/Pipeline_scrypt.jpg)</br>
+![screen](https://github.com/murzinvit/screen/blob/220ee2ba992ea9e241a19b752f6f6fe6a7dba7b0/Declarative%20pipeline.jpg)</br>
 
 3. Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile
 
