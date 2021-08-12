@@ -21,20 +21,20 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 > `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
 
 2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её</br>
-     pipeline {
-     agent any
-     stages {
-        stage('Hello') {
-            steps {
-                git 'https://github.com/murzinvit/example-playbook.git'
-                sh 'ansible-vault decrypt secret --vault-password-file vault_pass'
-                sh 'ansible-galaxy install -r requirements.yml'
-                sh 'ansible-playbook site.yml -i inventory/prod.yml'
-     }
-     }
-     }
-     }
-
+     pipeline { </br>
+     agent any </br>
+     stages { </br>
+        stage('Hello') { </br>
+            steps { </br>
+                git 'https://github.com/murzinvit/example-playbook.git' </br>
+                sh 'ansible-vault decrypt secret --vault-password-file vault_pass'</br>
+                sh 'ansible-galaxy install -r requirements.yml'</br>
+                sh 'ansible-playbook site.yml -i inventory/prod.yml' </br>
+     } </br>
+     } </br>
+     } </br>
+     } </br>
+</br>
 ## Детали процесса для справки
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
