@@ -21,6 +21,9 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 > `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
 
 2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её </br>
+![screen](https://github.com/murzinvit/screen/blob/2e9f1fc2adbafed776597e7ed7a602116f1e1778/Pipeline_scrypt.jpg)</br>
+
+3. Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile
 
 ## Детали процесса для справки </br>
 ### Добавление ssh ключа на AWS instance: </br>
@@ -49,8 +52,6 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 `usermod -aG docker jenkins`</br>
 `usermod -aG root jenkins`</br>
 `chmod 777 /var/run/docker.sock`</br>
-### Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её:</br>
-![screen](https://github.com/murzinvit/screen/blob/2e9f1fc2adbafed776597e7ed7a602116f1e1778/Pipeline_scrypt.jpg)</br>
 ### Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile(поменять master на main)[pipeline_repo](https://github.com/murzinvit/pipeline_repo)</br>
 ![screen](https://github.com/murzinvit/screen/blob/21252acc1a9917cc7b9dc59a567b884bcd630ca2/Jenkinsfile.jpg)</br>
 ### Создать Scripted Pipeline, наполнить его скриптом из pipeline
