@@ -19,7 +19,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 
 ### Основная часть:
 1. Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория: </br>
-> `ansible-vault decrypt secret --vault-pass-file vault_pass` </br>
+> `ansible-vault decrypt secret --vault-password-file vault_pass` </br>
 > `ansible-galaxy install -r requirements.yml` </br>
 > `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
 
