@@ -24,7 +24,9 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 ![screen](https://github.com/murzinvit/screen/blob/220ee2ba992ea9e241a19b752f6f6fe6a7dba7b0/Declarative%20pipeline.jpg)</br>
 
 3. Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile: </br>
-(поменять master на main, иначе ошибка)[pipeline_repo](https://github.com/murzinvit/pipeline_repo)</br>
+[https://github.com/murzinvit/pipeline_repo/Jenkinsfile](https://github.com/murzinvit/pipeline_repo) 
+4. Перенастроить Job на использование Jenkinsfile из репозитория: </br>
+При настройке job нужно поменять /master на /main, иначе происходит ошибка </br>
 ![screen](https://github.com/murzinvit/screen/blob/ae3e738a10be85234813e8e7b799c4fa92c05af9/Declarative%20pipeline%20from%20git.jpg)</br>
 
 ## Детали процесса для справки </br>
