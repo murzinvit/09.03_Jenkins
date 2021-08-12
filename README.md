@@ -9,6 +9,7 @@
 Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
 Образ использовал из задания - docker.io/aragast/agent:7 </br>
 Для выполнения playbook поднял контейнер с centos - `docker run -d --name centos centos:latest sleep 600000` </br>
+В inventory изменил hosts: centos и ansible_connect: docker </br>
 Jenkins job выполнится на динамическом slave - aragast/agent:7, а рузультаты будут на контейнере с centos </br>
 Выполненяя playbook на docker(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock</br>
 Команды для исправления: </br>
