@@ -7,7 +7,7 @@
 После установки Jenkins доступен на: http://localhost:8080. Перезапустить jenkins можно так: http://localhost:8080/restart </br>
 Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
 Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
-Образ использовал из задания - docker.io/aragast/agent:7
+Образ использовал из задания - docker.io/aragast/agent:7 </br>
 При выполнении playbook на docker контейнере(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock:</br>
 usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
