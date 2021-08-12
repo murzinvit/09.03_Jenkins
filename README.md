@@ -15,15 +15,17 @@ usermod -aG root jenkins </br>
 chmod 777 /var/run/docker.sock (вообще этого достаточно) </br>
 
 ### Основная часть:
-1. Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория </br>
+1. Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория: </br>
 > `ansible-vault decrypt secret --vault-pass-file vault_pass` </br>
 > `ansible-galaxy install -r requirements.yml` </br>
 > `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
 
-2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её </br>
+2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её: </br>
 ![screen](https://github.com/murzinvit/screen/blob/220ee2ba992ea9e241a19b752f6f6fe6a7dba7b0/Declarative%20pipeline.jpg)</br>
 
-3. Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile
+3. Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile: </br>
+(поменять master на main, иначе ошибка)[pipeline_repo](https://github.com/murzinvit/pipeline_repo)</br>
+![screen](https://github.com/murzinvit/screen/blob/ae3e738a10be85234813e8e7b799c4fa92c05af9/Declarative%20pipeline%20from%20git.jpg)</br>
 
 ## Детали процесса для справки </br>
 ### Добавление ssh ключа на AWS instance: </br>
@@ -52,8 +54,6 @@ Jenkins login в Git по SSH: на хосте с jenkins выполнить -> 
 `usermod -aG docker jenkins`</br>
 `usermod -aG root jenkins`</br>
 `chmod 777 /var/run/docker.sock`</br>
-### Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile(поменять master на main)[pipeline_repo](https://github.com/murzinvit/pipeline_repo)</br>
-![screen](https://github.com/murzinvit/screen/blob/21252acc1a9917cc7b9dc59a567b884bcd630ca2/Jenkinsfile.jpg)</br>
 ### Создать Scripted Pipeline, наполнить его скриптом из pipeline
 [ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo/blob/main/ScriptedJenkinsfile)
 ### Добавление credentionals для aws login:
