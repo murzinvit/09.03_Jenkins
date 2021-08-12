@@ -8,10 +8,11 @@
 Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
 Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
 Образ использовал из задания - docker.io/aragast/agent:7 </br>
-При выполнении playbook на docker контейнере(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock:</br>
+Выполненяя playbook на docker(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock:</br>
+Команды для исправления: </br>
 usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
-chmod 777 /var/run/docker.sock (вообще достаточно этого) </br>
+chmod 777 /var/run/docker.sock (вообще этого достаточно) </br>
 
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
