@@ -6,7 +6,7 @@
 Далее для удобства можно копировать команды в PuTTY из документации по установке с сайта [jenkins.io](https://www.jenkins.io/doc/book/installing/linux/) </br>
 После установки Jenkins доступен на: http://localhost:8080. Перезапустить jenkins можно так: http://localhost:8080/restart </br>
 Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
-Поднял cloud через docker на том же хосте что и jenkins master, по статье [russianblogs.com](https://russianblogs.com/article/73231545720/) </br>
+Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
 Образ использовал из задания - docker.io/aragast/agent:7
 
 ### Добавление ssh ключа на AWS instance: </br>
