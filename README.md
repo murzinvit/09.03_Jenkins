@@ -28,6 +28,12 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 4. Перенастроить Job на использование Jenkinsfile из репозитория: </br>
 При настройке job в поле branches specifier, нужно поменять /master на /main, иначе происходит ошибка </br>
 ![screen](https://github.com/murzinvit/screen/blob/ae3e738a10be85234813e8e7b799c4fa92c05af9/Declarative%20pipeline%20from%20git.jpg)</br>
+5. Создать Scripted Pipeline, наполнить его скриптом из pipeline: </br>
+6. Заменить credentialsId на свой собственный: </br>
+![screen](https://github.com/murzinvit/screen/blob/cef94a5941f2516c968fb4250b42838d34209d33/Scripted%20pipeline.jpg)
+7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозитрий в файл ScriptedJenkinsfile: </br>
+8. Отправить ссылку на репозиторий в ответе: </br>
+[https://github.com/murzinvit/pipeline_repo/ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo) 
 
 ## Детали процесса для справки </br>
 ### Добавление ssh ключа на AWS instance: </br>
