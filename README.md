@@ -1,6 +1,6 @@
 ### 09.03_Jenkins
 ============================================</br>
-Сделал fork репо [example-playbook](https://github.com/aragastmatb/example-playbook) - на github.com справа кнопка - fork
+Сделал fork от [example-playbook](https://github.com/aragastmatb/example-playbook)(на github.com справа кнопка - fork)</br>
 Установка Jenkins на Ubuntu 20.04: `apt update && apt install openjdk-8-jre`, далее вставить команды в PuTTY из док. [jenkins.io/doc](https://www.jenkins.io/doc/book/installing/linux/) </br>
 Jenkins доступен: `localhost: 8080:8080` </br>
 Выбор плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin </br>
