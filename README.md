@@ -8,7 +8,7 @@
 Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
 Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
 Образ использовал из задания - docker.io/aragast/agent:7 </br>
-Выполненяя playbook на docker(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock:</br>
+Выполненяя playbook на docker(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock</br>
 Команды для исправления: </br>
 usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
