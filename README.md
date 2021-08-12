@@ -8,7 +8,7 @@
 Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
 Поднял cloud через docker на том же хосте что и jenkins master, по статье [https://russianblogs.com/article/73231545720/](https://russianblogs.com/article/73231545720/) </br>
 Образ использовал из задания - docker.io/aragast/agent:7 </br>
-Для выполнения playbook поднял контейнер с centos - `docker run -d --name centos centos:latest sleep 600000` </br>
+В качестве целит для установки использовал контейнер из aragast/agent:7 - `docker run -d --name centos aragast/agent:7 sleep 600000` </br>
 В inventory/prod.yml изменил `hosts: centos` и `ansible_connection: docker` </br>
 Jenkins job выполнится на динамическом slave - aragast/agent:7, а рузультаты будут на контейнере с centos </br>
 Выполненяя playbook на docker(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock</br>
