@@ -35,7 +35,8 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 6. Заменить credentialsId на свой собственный: </br>
 ![screen](https://github.com/murzinvit/screen/blob/cef94a5941f2516c968fb4250b42838d34209d33/Scripted%20pipeline.jpg)
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозитрий в файл ScriptedJenkinsfile: </br>
-8. Отправить ссылку на репозиторий в ответе: </br>
+![screen](https://github.com/murzinvit/screen/blob/b76b1a7e8f5cf8267fca60a100815abc80dbb238/Docker_run_resultjpg.jpg)
+9. Отправить ссылку на репозиторий в ответе: </br>
 [https://github.com/murzinvit/pipeline_repo/ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo) 
 
 ## Детали процесса </br>
