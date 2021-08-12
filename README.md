@@ -15,7 +15,7 @@ Jenkins job выполнится на динамическом slave - aragast/a
 Команды для исправления: </br>
 usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
-chmod 777 /var/run/docker.sock (вообще этого достаточно) </br>
+chmod 777 /var/run/docker.sock (вообще этого достаточно, требуется при каждой перезагрузке) </br>
 
 ### Основная часть:
 1. Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория: </br>
