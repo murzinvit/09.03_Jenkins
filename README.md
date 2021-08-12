@@ -14,6 +14,14 @@ usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
 chmod 777 /var/run/docker.sock (вообще этого достаточно) </br>
 
+### Основная часть:
+1.Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория </br>
+> `ansible-vault decrypt secret --vault-pass-file vault_pass`
+> `ansible-galaxy install -r requirements.yml`
+> `ansible-playbook site.yml -i inventoryt/prod.yml`
+2.Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её</br>
+     
+## Детали процесса для справки
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
  - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano git -y, nano /etc/ssh/sshd_config </br>
