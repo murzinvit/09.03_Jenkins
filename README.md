@@ -35,7 +35,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
      } </br>
      } </br>
 </br>
-## Детали процесса для справки
+## Детали процесса для справки </br>
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
  - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano git -y, nano /etc/ssh/sshd_config </br>
