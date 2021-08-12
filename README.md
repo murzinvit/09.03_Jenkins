@@ -11,7 +11,7 @@
 При выполнении playbook на docker контейнере(jenkins master и docker контейнер на одной машине) выходит ошибка доступа к /var/run/docker.sock:</br>
 usermod -aG docker jenkins </br>
 usermod -aG root jenkins </br>
-chmod 777 /var/run/docker.sock (по идее достатточно только этого) </br>
+chmod 777 /var/run/docker.sock (вообще достаточно этого) </br>
 
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
