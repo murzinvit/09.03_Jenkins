@@ -36,6 +36,11 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно) </
 ![screen](https://github.com/murzinvit/screen/blob/cef94a5941f2516c968fb4250b42838d34209d33/Scripted%20pipeline.jpg)
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозитрий в файл ScriptedJenkinsfile: </br>
 Стоковый playbook не хотел устанвливать роль,жалуется на ошибку с publickey. Немного переделал playbook, так работает: </br>
+Сток: </br>
+> `ansible-vault decrypt secret --vault-password-file vault_pass`
+> `ansible-galaxy install -r requirements.yml`
+> `ansible-playbook site.yml -i inventoryt/prod.yml`
+Изменено: </br>
 > `git clone https://github.com/netology-code/mnt-homeworks-ansible.git` </br>
 > `mv mnt-homeworks-ansible ./roles/java` </br>
 > `ansible-playbook site.yml -i inventory/prod.yml` </br>
