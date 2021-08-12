@@ -1,11 +1,11 @@
 ## 09.03_Jenkins
 ============================================</br>
-#### Подготовка к выполнению:
+### Подготовка к выполнению:
 Сделал fork от [aragastmatb/example-playbook](https://github.com/aragastmatb/example-playbook) (на сайте github.com справа кнопка - fork) </br>
 Установка Jenkins на Ubuntu 20.04: `apt update && apt install openjdk-8-jre` </br>
 Далее для удобства можно копировать команды в PuTTY из документации по установке с сайта [jenkins.io](https://www.jenkins.io/doc/book/installing/linux/) </br>
-После установки Jenkins доступен на: http://localhost:8080, перезапустить jenkins можно так: http://localhost:8080/restart </br>
-Выбор плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin </br>
+После установки Jenkins доступен на: http://localhost:8080. Перезапустить jenkins можно так: http://localhost:8080/restart </br>
+Установка плагинов: Git, GitHub, SSH, SSHAgent, Pipeline, Amazon EC2 plugin, Docker </br>
 ### Добавление ssh ключа на AWS instance: </br>
  - При создании ec2 instance в AWS назначить ему key-pair ppk для PuTTY и сохранить ppk файл </br>
  - Через PuTTY + key.ppk зайти на instance(login - ec2-user), выполнить - sudo passwd root, yum install nano git -y, nano /etc/ssh/sshd_config </br>
