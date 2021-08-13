@@ -47,7 +47,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно, т
 > `ansible-playbook site.yml -i inventory/prod.yml` </br>
 Build через динамический докер-клауд контейнер(сток при этом не срабатывает, только изменённый вариант playbook):
 ![screen](https://github.com/murzinvit/screen/blob/e0a57d0635247346900f1a4913e174a2b267696d/Docker_build_ok.jpg)
-Build через master, в docker контейнер c centos (сток работает):
+Build через master, в docker контейнер c centos поднятый на этой же машине(сток работает):
 ![screen](https://github.com/murzinvit/screen/blob/5d721e481acf1ba0b1b930d441c511851d0343a4/Build_on_master.jpg)
 8. Отправить ссылку на репозиторий в ответе: </br>
 [https://github.com/murzinvit/pipeline_repo/ScriptedJenkinsfile](https://github.com/murzinvit/pipeline_repo) 
