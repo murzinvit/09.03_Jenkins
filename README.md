@@ -35,7 +35,8 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно, т
 6. Заменить credentialsId на свой собственный: </br>
 ![screen](https://github.com/murzinvit/screen/blob/cef94a5941f2516c968fb4250b42838d34209d33/Scripted%20pipeline.jpg)
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозитрий в файл ScriptedJenkinsfile: </br>
-Стоковый playbook не хотел устанвливать роль,жалуется на ошибку с publickey. Немного переделал playbook, так работает: </br>
+Стоковый playbook, при выполнении на slave не хочет устанвливать роль java,жалуется на ошибку с publickey. При этом на master выполняется норммально. </br>
+Немного переделал playbook, так работает: </br>
 > Сток: </br>
 > `ansible-vault decrypt secret --vault-password-file vault_pass`</br>
 > `ansible-galaxy install -r requirements.yml`</br>
