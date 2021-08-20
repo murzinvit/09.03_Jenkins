@@ -21,7 +21,7 @@ chmod 777 /var/run/docker.sock (вообще этого достаточно, т
 1. Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория: </br>
 > `ansible-vault decrypt secret --vault-password-file vault_pass` </br>
 > `ansible-galaxy install -r requirements.yml` </br>
-> `ansible-playbook site.yml -i inventoryt/prod.yml` </br>
+> `ansible-playbook site.yml -i inventory/prod.yml` </br>
 
 2. Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её: </br>
 ![screen](https://github.com/murzinvit/screen/blob/220ee2ba992ea9e241a19b752f6f6fe6a7dba7b0/Declarative%20pipeline.jpg)</br>
